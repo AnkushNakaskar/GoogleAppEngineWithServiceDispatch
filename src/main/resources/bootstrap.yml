@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: spring-google
+
+---
+spring:
+  profiles: ankush
+  cloud:
+    consul:
+        host: '192.168.250.25'
+        port: 8500
+        discovery:
+          healthCheckPath: '/api/spring/google/health'        
+---
+spring:
+  profiles: test
+---
+
+spring:
+  profiles: default
+---
+spring:
+  profiles: qa
+---
+spring:
+  profiles: automation

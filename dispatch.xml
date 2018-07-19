@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dispatch-entries>
+  <dispatch>
+      <!-- Default module serves the typical web resources and all static resources. -->
+      <url>*/favicon.ico</url>
+      <module>ankushappservice</module>
+  </dispatch>
+  <dispatch>
+      <!-- Send all mobile traffic to the mobile frontend. -->
+      <url>*/mobile/*</url>
+      <module>ankushappservice</module>
+  </dispatch>
+  <dispatch>
+      <!-- Send all work to the one static backend. -->
+      <url>*/work/*</url>
+      <module>ankushappservicedispatch</module>
+  </dispatch>
+</dispatch-entries>
